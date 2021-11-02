@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-HD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body unselectable="on" onselectstart="return false;" onmousedown="return false;">
+    <div class="headline">
+        <h1 onclick="location.reload()">Calculator-HD</h1>
+        <h2 id="result" onclick="removeLast()">0</h2>
+    </div>
+
+    <table>
+        <tr>
+            <td onclick="appendNum(9)">9</td>
+            <td onclick="appendNum(8)">8</td>
+            <td onclick="appendNum(7)">7</td>
+            <td onclick="appendNum(' / ')">/</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum(6)">6</td>
+            <td onclick="appendNum(5)">5</td>
+            <td onclick="appendNum(4)">4</td>
+            <td onclick="appendNum(' * ')">x</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum(3)">3</td>
+            <td onclick="appendNum(2)">2</td>
+            <td onclick="appendNum(1)">1</td>
+            <td onclick="appendNum(' + ')">+</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum(0)">0</td>
+            <td onclick="appendNum(' . ')">.</td>
+            <td onclick="equal()">=</td>
+            <td onclick="appendNum(' - ')">-</td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
